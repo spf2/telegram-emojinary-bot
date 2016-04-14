@@ -1,0 +1,30 @@
+{
+  "name": "telegram-emojinary-bot",
+  "version": "1.0.0",
+  "description": "emojinary demo for telegram",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spf2/telegram-emojinary-bot.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot"
+  ],
+  "author": "spf2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spf2/telegram-emojinary-bot/issues"
+  },
+  "homepage": "https://github.com/spf2/telegram-emojinary-bot#readme",
+  "dependencies": {
+    "clj-fuzzy": "^0.3.1",
+    "node-persist": "0.0.11",
+    "node-telegram-bot-api": "^0.21.1",
+    "tmdbv3": "^0.1.2"
+  }
+}
