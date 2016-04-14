@@ -2,7 +2,7 @@ var emojinary = require('./emojinary');
 
 var TelegramBot = require('node-telegram-bot-api');
 var bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, {'polling': true});
-bot.setWebHook("");
+bot.setWebHook();
 
 var storage = require('node-persist');
 storage.initSync();
