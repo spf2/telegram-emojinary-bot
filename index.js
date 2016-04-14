@@ -1,11 +1,7 @@
+var emojinary = require('./emojinary');
+
 var TelegramBot = require('node-telegram-bot-api');
-var bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, {
-  'webHook': {
-    host: '0.0.0.0',
-    port: process.env.PORT,
-  },
-});
-bot.setWebHook('https://telegram-emojinary-bot.herokuapp.com');
+var bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, {'polling': true});
 
 var storage = require('node-persist');
 storage.initSync();
