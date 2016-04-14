@@ -1,5 +1,5 @@
 var TelegramBot = require('node-telegram-bot-api');
-var bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, {'webHook': true});
+var bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, {'webHook': {port: process.env.PORT}});
 bot.setWebHook('https://telegram-emojinary-bot.herokuapp.com');
 
 var storage = require('node-persist');
